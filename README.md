@@ -74,3 +74,15 @@ npm install @mui/material
 npm install @mui/icons-material
 npm install @emotion/react
 npm install @emotion/styled
+
+### Deployment to Github using gh-pages
+
+1. npm install gh-pages
+2. Add git repo if not added, (push an existing repository from the command line )
+    git remote add origin https://github.com/alteracc/funzone.git
+    git branch -M main
+    git push -u origin main
+3. Add below lines in package.json scripts
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+4. Run "npm run deploy" to create the build folder
