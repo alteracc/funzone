@@ -86,3 +86,8 @@ npm install @emotion/styled
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build"
 4. Run "npm run deploy" to create the build folder
+
+
+### Some Issues and their possible solutions:
+1. A branch named 'gh-pages' already exists.
+    Delete /node_modules/.cache/gh-pages
