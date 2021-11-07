@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #1e464a;
 }
 
 .App-logo {
@@ -35,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.welcomeText {
+  color: white;
+}
+
+.GameInfoText {
+  color: white;
 }
