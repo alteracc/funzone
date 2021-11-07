@@ -85,9 +85,20 @@ npm install @emotion/styled
 3. Add below lines in package.json scripts
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build"
-4. Run "npm run deploy" to create the build folder
+4. Run "npm run deploy" to create the build folder and it will get deployed to a github url (See 6 to know the URL)
+5. git add , commit and push to the repo
+    git add .
+    git commit -m "message"
+    git push origin main
+6. Go to settings page of Github Repo and copy Deploy URL from Pages section
+7. Update in package.json as shown below:
+    "homepage" : "url_copied from Github"
+8. Repeat 4 and 5 ( whenever any changes)
 
 
 ### Some Issues and their possible solutions:
 1. A branch named 'gh-pages' already exists.
     Delete /node_modules/.cache/gh-pages
+2. Logon failed, could not read Username for 'https:/github.com' 
+    git remote set-url origin https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+    e.g git remote set-url origin https://<ACCESS-TOKEN>@github.com/alteracc/funzone.git or url with Username and Password
